@@ -1,0 +1,202 @@
+.App {
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: url("https://i.imgur.com/j8IEfV4.gif") repeat-y 100% 100% fixed;
+  height: 100%;
+  width: 100%;
+}
+.w-96 {
+  background: rgb(39 34 24);
+}
+.connect-button:hover {
+  text-decoration: none;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+.connect-button-mobile:hover {
+  text-decoration: none;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+.connect-button-mobile {
+  display: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin-bottom: 35px;
+  margin-top: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.75;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: url("../public/wallet2.png") no-repeat center;
+  background-size: 125px;
+  background-position-y: -40px;
+  border-radius: 8px;
+  color: #5f3b10;
+  font-size: 18px;
+  padding: 15px;
+  min-width: 138px;
+  box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
+  /* color: white; */
+}
+/* .con-butt-1 {
+  background-image: url("../public/connect-wallet.png") !important;
+} */
+.connect-button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 5px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.75;
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: url("../public/connect-wallet.png") no-repeat center center;
+  background-size: contain;
+  border-radius: 8px;
+  color: #5f3b10;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 15px;
+  min-width: 138px;
+  box-shadow: rgba(0, 0, 0, 0.59) 6px 6px 20px 6px;
+  /* color: white; */
+  position: fixed;
+  right: 48px;
+  top: 48px;
+}
+
+.bake-beans-button {
+  background: url("../public/1.png") no-repeat;
+  background-size: 168px;
+  background-position-y: -49px;
+  background-position-x: -14px;
+  color: #5f3b10;
+  font-size: large;
+}
+
+.reBake-button {
+  background: url("../public/1.png") no-repeat center;
+  background-size: 140px;
+  background-position-y: -44px;
+  color: #5f3b10;
+  font-size: large;
+}
+
+.eat-button {
+  background: url("../public/1.png") no-repeat;
+  background-size: 158px;
+  background-position-x: -11px;
+  background-position-y: -52px;
+  color: #5f3b10;
+  font-size: large;
+}
+
+@media screen and (max-width: 900px) {
+  .connect-button {
+    display: none;
+    transition: ease-in-out;
+  }
+  body {
+    background: url("../public/mobiwallp.gif") fixed;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 900px) {
+  .connect-button-mobile {
+    display: inline-flex;
+    transition: ease-in-out;
+  }
+}
+.bake-input {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 12px 90px 12px 16px;
+  text-align: right;
+  border-radius: 0px;
+  border: 1px solid rgb(85, 85, 85);
+  background: white;
+  width: 100%;
+  outline: none;
+}
+.ref-input {
+  font-size: 10px;
+  font-weight: 300;
+  padding: 10px 12px;
+  border-radius: 0px;
+  border: 1px solid rgb(85, 85, 85);
+  background: white;
+  width: 100%;
+  outline: none;
+  color: #7c501b;
+}
+.balance {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.334;
+  color: #7c501b;
+}
+.nutritions,
+.info {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.334;
+  color: #fcfcfc;
+}
+.decs {
+  margin: 0px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fcfcfc;
+}
+.rewards-decs {
+  margin: 0px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  color: #fcfcfc;
+  font-weight: bolder;
+}
+/* .gap-x-32 {
+  padding-left: 15px;
+} */
